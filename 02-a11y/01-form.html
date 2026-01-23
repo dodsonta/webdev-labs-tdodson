@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="../_styles/styles.css" />
   </head>
   <body>
-    <h1>01 - Form</h1>
-    <form action="/submit">
-      <span>Name</span>
-      <input type="text" />
-      <br /><br />
-      <label>
-        Email
-        <input type="text" />
-      </label>
-      <br /><br />
-      <span>Favorite Character</span>
-      <div><input type="radio" id="spongebob" />Spongebob</div>
-      <div><input type="radio" id="patrick" />Patrick</div>
-      <div><input type="radio" id="sandy" />Sandy</div>
-      <br />
-      <button>Submit</button>
-    </form>
+    <header>
+      <h1>01 - Form</h1>
+    </header>
+    <main>
+      <form action="/submit">
+        <label for="name-input">
+          <span>Name</span>
+          <input type="text" id="name-input" />
+        </label>
+        <br /><br />
+        <label for="email-input">
+          Email
+          <input type="email" id="email-input" />
+        </label>
+        <br /><br />
+        <fieldset>
+          <legend>Favorite Character</legend>
+          <input type="radio" id="spongebob" />
+          <label for="spongebob">Spongebob</label>
+          <br />
+          <br />
+          <input type="radio" id="patrick" />
+          <label for="patrick">Patrick</label>
+          <br />
+          <br />
+          <input type="radio" id="sandy" />
+          <label for="sandy">Sandy</label>
+          <br />
+          <br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
   </body>
 </html>
