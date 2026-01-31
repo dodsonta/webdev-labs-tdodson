@@ -1,25 +1,31 @@
 /* Specificity Exercise */
 
 nav .list-item > a {
+  /* 0 1 2 */
   color: var(--purple);
 }
 
 #main::first-letter {
+  /* 1 0 1 */
   color: var(--purple);
 }
 
 input[type] {
+  /* 0 1 1 */
   color: var(--purple);
 }
 
 section .main::first-line {
+  /* 0 1 2 */
   color: var(--purple);
 }
 
-nav ul.menu li#first a:not([class='visited']) {
+nav ul.menu li#first a:not([class="visited"]) {
+  /* 1 2 4 */
   color: var(--purple);
 }
 
 div ol li ul li ol li ul li a {
+  /* 0 0 10 */
   color: var(--purple);
 }
